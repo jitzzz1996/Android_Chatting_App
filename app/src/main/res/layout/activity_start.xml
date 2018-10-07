@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtrequest"
+        android:text="Welcome To Chat Buddy App!"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtrequest"
+        android:id="@+id/startbtnregister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Need A New Account"
+        android:layout_alignLeft="@id/startbtnLogin"
+        android:layout_alignRight="@id/startbtnLogin"
+        android:textColor="#000"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startbtnregister"
+        android:id="@+id/startbtnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Already Have Account"
+        android:textColor="#000"/>
+
+</RelativeLayout>

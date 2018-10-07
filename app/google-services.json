@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "669826642306",
+    "firebase_url": "https://androidbrilltrainingtask2.firebaseio.com",
+    "project_id": "androidbrilltrainingtask2",
+    "storage_bucket": "androidbrilltrainingtask2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669826642306:android:d9ecd80c7997d819",
+        "android_client_info": {
+          "package_name": "com.example.jitesh.android_brill_training_task_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669826642306-mpqdq35serei2al1lrhtncj3valeqtqd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jitesh.android_brill_training_task_2",
+            "certificate_hash": "7fbf63bbae6b6da3745ac80c17ba70221622fef6"
+          }
+        },
+        {
+          "client_id": "669826642306-mspgl0aj9chrev4fptff1tvgt0k5sjol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr49-jjHlWZaT5t-yn6bEpPHGFeCtEWqw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669826642306-mspgl0aj9chrev4fptff1tvgt0k5sjol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

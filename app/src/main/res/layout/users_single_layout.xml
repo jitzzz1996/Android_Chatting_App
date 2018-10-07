@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/rlayout">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ee9ef5"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adpterimageview"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:src="@drawable/blankprofile"
+                app:civ_border_width="2dp"
+                android:padding="4dip"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                app:civ_border_color="#FF000000"/>
+
+
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="Name-->"
+                android:layout_below="@id/adpterimageview"
+                android:textColor="#203A43"
+                android:textStyle="bold"
+                android:padding="4dp"/>
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/txt1"
+                android:textSize="25dp"
+                android:layout_below="@id/adpterimageview"
+                android:paddingLeft="6dp" />
+
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewName"
+                android:textSize="25dp"
+                android:text="Email-->"
+                android:textColor="#203A43"
+                android:textStyle="bold"
+                android:padding="4dp"/>
+
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/txt2"
+                android:textSize="25dp"
+                android:paddingLeft="6dp"
+                android:layout_below="@id/textViewName"/>
+
+
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewEmail"
+                android:textSize="25dp"
+                android:textColor="#203A43"
+                android:textStyle="bold"
+                android:text="Gender-->"
+                android:padding="4dp"/>
+
+            <TextView
+                android:id="@+id/textViewGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewEmail"
+                android:layout_toRightOf="@id/txt4"
+                android:textSize="25dp"
+                android:paddingLeft="6dp"
+                />
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewGender"
+                android:textSize="25dp"
+                android:textColor="#203A43"
+                android:textStyle="bold"
+                android:text="Dob-->"
+                android:padding="4dp"/>
+
+            <TextView
+                android:id="@+id/textViewDob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewGender"
+                android:layout_toRightOf="@id/txt5"
+                android:textSize="25dp"
+                android:paddingLeft="6dp"/>
+
+            <TextView
+                android:id="@+id/txt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewDob"
+                android:textSize="25dp"
+                android:textColor="#203A43"
+                android:textStyle="bold"
+                android:text="Status-->"
+                android:padding="4dp"/>
+
+            <TextView
+                android:id="@+id/textViewStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewDob"
+                android:layout_toRightOf="@id/txt6"
+                android:textSize="25dp"
+                android:paddingLeft="6dp"/>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

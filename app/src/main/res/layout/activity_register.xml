@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/sview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout android:id="@+id/rlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtview"
+       android:text="Create Account"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/reg_display_Name"
+        android:layout_below="@id/txtview"
+
+        android:nextFocusDown="@id/reg_email">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:id="@+id/etregname"
+            android:textColorHint="#000"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:nextFocusDown="@id/reg_password"
+        android:layout_below="@id/reg_display_Name"
+        android:id="@+id/reg_email">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:id="@+id/etregmail"
+            android:maxLines="1"
+            android:textColorHint="#000"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_password"
+        android:nextFocusDown="@id/reg_Cnf_Password"
+        app:passwordToggleEnabled="true"
+        android:layout_marginTop="25dip"
+        app:hintAnimationEnabled="true"
+        android:layout_below="@id/reg_email">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:id="@+id/etregpassword"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textColorHint="#000"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_Cnf_Password"
+        android:nextFocusDown="@id/reg_Date"
+        android:layout_marginTop="25dip"
+        app:passwordToggleEnabled="true"
+        app:hintAnimationEnabled="true"
+        android:layout_below="@id/reg_password">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Confirm Password"
+            android:inputType="textPassword"
+            android:id="@+id/etregcnfpaasword"
+            android:maxLines="1"
+            android:textColorHint="#000"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <EditText
+        android:id="@+id/reg_Date"
+        android:layout_width="match_parent"
+        android:inputType="none"
+        android:editable="false"
+        android:cursorVisible="false"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_Cnf_Password"
+        android:text="DD/MM/YYYY"
+        android:focusable="false"
+        android:nextFocusDown="@+id/reg_Spinner"
+        android:drawableRight="@drawable/calendar"
+        android:layout_marginTop="25dp"
+        android:textColor="#d1c5c5"/>
+
+    <LinearLayout
+        android:id="@+id/llayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_Date"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+
+    <Spinner
+        android:id="@+id/reg_Spinner"
+        android:layout_width="200dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_Date"
+        android:nextFocusDown="@+id/reg_Button_Create_"
+        android:layout_marginTop="25dp"
+        android:spinnerMode="dialog" />
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/reg_Button_Create"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dip"
+        android:text="Create Account"
+        android:textColor="#000"/>
+</RelativeLayout>
+</ScrollView>

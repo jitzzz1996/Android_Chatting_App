@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rlayout"
+    android:layout_height="match_parent"
+    tools:context=".StatusActivity"
+    android:padding="16dp">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/txtinputstatuslayout">
+
+        <EditText
+            android:id="@+id/txtinputstatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Status" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtinputstatuslayout"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btninputstatus"
+        android:layout_centerHorizontal="true"
+        android:text="Save Changes"/>
+
+</RelativeLayout>

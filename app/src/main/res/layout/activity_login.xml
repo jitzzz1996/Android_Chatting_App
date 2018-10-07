@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/sview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#324762">
+
+
+
+    <LinearLayout android:id="@+id/rlayout1"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageview"
+            android:src="@mipmap/logochatbuddy3"
+            android:layout_marginTop="40dp"/>
+
+
+
+    <RelativeLayout android:id="@+id/rlayout2"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:nextFocusDown="@id/login_password_layout"
+            android:id="@+id/login_email_layout"
+            app:hintTextAppearance="@style/TextLabel">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:drawableLeft="@drawable/message"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"
+                android:id="@+id/etloginemail"
+                android:maxLines="1"
+                android:textColorHint="#fff"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_password_layout"
+            android:nextFocusDown="@id/login_button"
+            android:layout_marginTop="25dip"
+            android:layout_below="@id/login_email_layout">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/lockpassword"
+                android:drawablePadding="10dp"
+                android:id="@+id/etloginpassword"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:textColorHint="#fff"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/login_button"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_password_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="#00c0bb"
+            android:text="LOGIN"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

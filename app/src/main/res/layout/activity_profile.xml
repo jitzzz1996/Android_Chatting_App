@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/sview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rlayout"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+
+    android:padding="8dp">
+
+
+
+    <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profileImageview"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/blankprofile" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profilename"
+        android:layout_below="@id/profileImageview"
+        android:text="Display Name"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profilestatus"
+        android:layout_below="@id/profilename"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:text="Hi there i m using chat buddy app"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileFriends"
+        android:layout_below="@id/profilestatus"
+        android:text="Total Friends"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dip"
+        android:textColor="#fff"
+
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profilesendrequest"
+        android:layout_below="@id/profileFriends"
+        android:text="Send Friend Request"
+        android:background="#f43a3a"
+        android:padding="5dip"
+        android:textColor="#fff"
+        android:layout_alignLeft="@id/profiledeclinerequest"
+        android:layout_alignRight="@id/profiledeclinerequest"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profiledeclinerequest"
+        android:layout_below="@id/profilesendrequest"
+        android:text="Decline Friend Request"
+        android:background="#f43a3a"
+        android:padding="5dip"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+</RelativeLayout>
+</ScrollView>
